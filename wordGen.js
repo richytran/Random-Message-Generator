@@ -3,7 +3,7 @@ const randomNum = () =>{
     num = (Math.floor(Math.random() * 3));
     return num;
 }
-console.log(randomNum());
+
 const phrase = (funct) =>{
     let number = randomNum();
     switch (number){
@@ -20,4 +20,6 @@ const phrase = (funct) =>{
             return "bruh";
             break;
     }
-} 
+}
+
+console.log(phrase(randomNum()));
